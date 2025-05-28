@@ -1,0 +1,25 @@
+{
+  "name": "bot-nqt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anime-code/bot-nqt.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anime-code/bot-nqt/issues"
+  },
+  "homepage": "https://github.com/anime-code/bot-nqt#readme",
+  "dependencies": {
+    "discord.js": "^14.19.3",
+    "dotenv": "^16.5.0",
+    "node-schedule": "^2.1.1"
+  }
+}
