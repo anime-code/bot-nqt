@@ -12,10 +12,8 @@ const client = new Client({
 });
 
 const reminders = [
-    { time: '0 9 * * 1-5', message: '📝 Nhắc nhở: Bắt đầu ASAKAI thôi mọi người!' },
-    { time: '0 12 * * 1-5', message: '🍽️ Nhắc nhở: Ăn trưa lúc 12 nhé!' },
     { time: '0 16 * * 1-5', message: 'Lời nhắc: Toàn nay nhớ mời mọi bữa chiều nhé' },
-    { time: '45 16 * * 1-5', message: '🍽️ Nhắc nhở: Chuẩn bị hết giờ làm rồi mọi người nhớ report trước khi về nhé!' },
+    { time: '10 16 * * 1-5', message: '🍽️ Nhắc nhở: Chuẩn bị hết giờ làm rồi mọi người nhớ report trước khi về nhé!' },
 ];
 
 client.once('ready', () => {
