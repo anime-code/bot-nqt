@@ -35,3 +35,12 @@ client.once('ready', () => {
     });
 });
 client.login(process.env.DISCORD_TOKEN);
+const express = require('express');
+const app = express();
+const PORT = process.env.PORT || 3000;
+
+app.get('/', (req, res) => res.send('Bot đang chạy!'));
+
+app.listen(PORT, () => {
+    console.log(`✅ Server Express chạy trên port ${PORT}`);
+});
