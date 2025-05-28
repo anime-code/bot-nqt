@@ -12,9 +12,10 @@ const client = new Client({
 });
 
 const reminders = [
-    { time: '* * * * *', message: 'Bắt đầu ASAKAI thôi mọi người!' },
-    { time: '* * * * *', message: 'Nhớ đừng quên daily report nhé: https://work-report.thk-hd-hn.vn/' },
+    { time: '* * * * *', message: 'Bắt đầu ASAKAI thôi mọi người!' },  // mỗi 1 phút
+    { time: '*/2 * * * *', message: 'Nhớ đừng quên daily report nhé: https://work-report.thk-hd-hn.vn/' }, // mỗi 2 phút
 ];
+
 
 client.once('ready', () => {
     console.log(`✅ Bot ${client.user.tag} đã sẵn sàng!`);
