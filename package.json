@@ -22,6 +22,8 @@
     "discord.js": "^14.19.3",
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
-    "node-schedule": "^2.1.1"
+    "node-schedule": "^2.1.1",
+    "node-schedule-tz": "^1.2.1-4",
+    "winston": "^3.17.0"
   }
 }
