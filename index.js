@@ -1,7 +1,12 @@
+// index.js
+
 const { Client, GatewayIntentBits, Partials, SlashCommandBuilder } = require('discord.js');
 const schedule = require('node-schedule-tz');
 const winston = require('winston');
 require('dotenv').config();
+
+// Ép buộc múi giờ toàn cục
+process.env.TZ = 'Asia/Ho_Chi_Minh';
 
 // Cấu hình logger
 const logger = winston.createLogger({
@@ -26,27 +31,41 @@ const client = new Client({
     partials: [Partials.Channel],
 });
 
-// Danh sách nhắc nhở
+// Danh sách nhắc nhở - Gửi mỗi phút
 const reminders = [
-    { time: '0 45 9 * * 1-5', message: 'Bắt đầu ASAKAI thôi mọi người!', tz: 'Asia/Ho_Chi_Minh' }, // 08:59 thứ 2-6
-    { time: '0 45 16 * * 1-5', message: 'Nhớ đừng quên daily report nhé: https://work-report.thk-hd-hn.vn/', tz: 'Asia/Ho_Chi_Minh' }, // 16:45 thứ 2-6
+    { time: '* * * * * *', message: 'Bắt đầu ASAKAI thôi mọi người!', tz: 'Asia/Ho_Chi_Minh' }, // Mỗi phút
+    { time: '* * * * * *', message: 'Nhớ đừng quên daily report nhé: https://work-report.thk-hd-hn.vn/', tz: 'Asia/Ho_Chi_Minh' }, // Mỗi phút
 ];
 
 // Khi bot đã sẵn sàng
 client.once('ready', async () => {
     logger.info(`✅ Bot ${client.user.tag} đã sẵn sàng!`);
-    logger.info(`🌐 Múi giờ hiện tại: ${new Date().toString()}`);
+    logger.info(`🌐 Múi giờ hệ thống hiện tại: ${new Date().toString()}`);
 
     // Kiểm tra CHANNEL_ID
     const channel = client.channels.cache.get(process.env.CHANNEL_ID);
     if (!channel) {
         logger.error('❌ Không tìm thấy kênh! Kiểm tra lại CHANNEL_ID trong file .env.');
-        process.exit(1); // Thoát nếu kênh không hợp lệ
+        process.exit(1);
     }
+
+    // Hàm kiểm tra và chạy thủ công ngay khi khởi động
+    const now = new Date();
+    const runMissedJobs = () => {
+        reminders.forEach((reminder, index) => {
+            channel.send(`@everyone ${reminder.message} (Chạy lại do bỏ lỡ)`)
+                .then(() => logger.info(`✅ Đã gửi nhắc nhở đã bỏ lỡ: ${reminder.message}`))
+                .catch((err) => logger.error(`❌ Lỗi khi gửi tin nhắn: ${err.message}`));
+        });
+    };
+
+    // Chạy thủ công ngay khi khởi động
+    runMissedJobs();
 
     // Lên lịch gửi tin nhắn
     reminders.forEach((reminder, index) => {
         schedule.scheduleJob(`reminder-${index}`, reminder.time, { tz: reminder.tz }, () => {
+            logger.info(`⏰ Đang chạy lịch trình nhắc nhở ${index + 1} vào ${new Date().toString()}`);
             channel.send(`@everyone ${reminder.message}`)
                 .then(() => logger.info(`✅ Đã gửi nhắc nhở: ${reminder.message}`))
                 .catch((err) => logger.error(`❌ Lỗi khi gửi tin nhắn: ${err.message}`));
@@ -74,14 +93,14 @@ client.on('interactionCreate', async (interaction) => {
 
     if (interaction.commandName === 'status') {
         await interaction.reply({
-            content: `✅ Bot đang hoạt động! Hiện tại có ${reminders.length} nhắc nhở được lên lịch.`,
+            content: `✅ Bot đang hoạt động! Hiện tại có ${reminders.length} nhắc nhở được lên lịch. Múi giờ: ${new Date().toString()}`,
             ephemeral: true,
         });
         logger.info(`📡 Lệnh /status được gọi bởi ${interaction.user.tag}`);
     }
 });
 
-// Xử lý lỗi không mong muốn
+// Xử lý lỗi
 client.on('error', (err) => {
     logger.error(`❌ Lỗi client Discord: ${err.message}`);
 });
@@ -110,10 +129,10 @@ const loginBot = async () => {
 };
 loginBot();
 
-// Express server để giữ bot hoạt động
+// Express server
 const express = require('express');
 const app = express();
-const PORT = process.env.PORT || 3000; // Sử dụng cổng từ Render
+const PORT = process.env.PORT || 3000;
 
 app.get('/', (req, res) => res.send('Bot đang chạy!'));
 
