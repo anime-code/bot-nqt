@@ -67,10 +67,7 @@ const retrySendMessage = async (channel, message, retries = 3, delay = 5000) => 
 const reminders = [
     { time: '0 59 8 * * 1-5', message: 'Bắt đầu ASAKAI thôi mọi người!' }, // 08:59 thứ 2-6
     { time: '0 0 12 * * 1-5', message: 'Nghỉ trưa thôi mọi người' }, // 12:00 thứ 2-6
-    { time: '0 10 14 * * 1-5', message: 'Test boss lần 1' }, // 13:41 thứ 2-6
-    { time: '0 15 14 * * 1-5', message: 'Test boss lần 2' }, // 13:41 thứ 2-6
-    { time: '0 20 14 * * 1-5', message: 'Test boss lần 3' }, // 13:41 thứ 2-6
-    { time: '0 45 16 * * 1-5', message: 'Nhớ đừng quên daily report nhé: https://work-report.thk-hd-hn.vn/' }, // 16:45 thứ 2-6
+    { time: '0 53 16 * * 1-5', message: 'Nhớ đừng quên daily report nhé: https://work-report.thk-hd-hn.vn/' }, // 16:45 thứ 2-6
 ];
 
 client.once('ready', async () => {
