@@ -1,27 +1,18 @@
-// index.js
-
-const { Client, GatewayIntentBits, Partials, SlashCommandBuilder } = require('discord.js');
-const schedule = require('node-schedule-tz');
+const {Client, GatewayIntentBits, Partials, SlashCommandBuilder} = require('discord.js');
+const schedule = require('node-schedule');
 const winston = require('winston');
 require('dotenv').config();
-
-// Ép buộc múi giờ toàn cục
-process.env.TZ = 'Asia/Ho_Chi_Minh';
-
-// Cấu hình logger
 const logger = winston.createLogger({
     level: 'info',
     format: winston.format.combine(
-        winston.format.timestamp({ format: 'YYYY-MM-DD HH:mm:ss' }),
-        winston.format.printf(({ timestamp, level, message }) => `${timestamp} [${level.toUpperCase()}]: ${message}`)
+        winston.format.timestamp({format: 'YYYY-MM-DD HH:mm:ss'}),
+        winston.format.printf(({timestamp, level, message}) => `${timestamp} [${level.toUpperCase()}]: ${message}`)
     ),
     transports: [
         new winston.transports.Console(),
-        new winston.transports.File({ filename: 'bot.log' }),
+        new winston.transports.File({filename: 'bot.log'}),
     ],
 });
-
-// Khởi tạo client Discord
 const client = new Client({
     intents: [
         GatewayIntentBits.Guilds,
@@ -30,50 +21,49 @@ const client = new Client({
     ],
     partials: [Partials.Channel],
 });
-
-// Danh sách nhắc nhở - Gửi mỗi phút
+const retrySendMessage = async (channel, message, retries = 3, delay = 5000) => {
+    for (let i = 0; i < retries; i++) {
+        try {
+            await channel.send(message);
+            return true;
+        } catch (err) {
+            logger.error(`❌ Lỗi khi gửi tin nhắn (lần ${i + 1}/${retries}): ${err.message}`);
+            if (i < retries - 1) {
+                logger.info(`⏳ Thử lại sau ${delay / 1000} giây...`);
+                await new Promise(resolve => setTimeout(resolve, delay));
+            }
+        }
+    }
+    return false;
+};
 const reminders = [
-    { time: '* * * * * *', message: 'Bắt đầu ASAKAI thôi mọi người!', tz: 'Asia/Ho_Chi_Minh' }, // Mỗi phút
-    { time: '* * * * * *', message: 'Nhớ đừng quên daily report nhé: https://work-report.thk-hd-hn.vn/', tz: 'Asia/Ho_Chi_Minh' }, // Mỗi phút
+    {time: '0 */2 * * * *', message: 'Bắt đầu ASAKAI thôi mọi người!'},
+    {time: '0 */2 * * * *', message: 'Nhớ đừng quên daily report nhé: https://work-report.thk-hd-hn.vn/'},
 ];
 
-// Khi bot đã sẵn sàng
 client.once('ready', async () => {
-    logger.info(`✅ Bot ${client.user.tag} đã sẵn sàng!`);
-    logger.info(`🌐 Múi giờ hệ thống hiện tại: ${new Date().toString()}`);
+    console.log(`✅ Bot ${client.user.tag} đã sẵn sàng!`);
 
-    // Kiểm tra CHANNEL_ID
     const channel = client.channels.cache.get(process.env.CHANNEL_ID);
+
     if (!channel) {
-        logger.error('❌ Không tìm thấy kênh! Kiểm tra lại CHANNEL_ID trong file .env.');
-        process.exit(1);
+        console.error('❌ Không tìm thấy kênh! Kiểm tra lại CHANNEL_ID.');
+        return;
     }
 
-    // Hàm kiểm tra và chạy thủ công ngay khi khởi động
-    const now = new Date();
-    const runMissedJobs = () => {
-        reminders.forEach((reminder, index) => {
-            channel.send(`@everyone ${reminder.message} (Chạy lại do bỏ lỡ)`)
-                .then(() => logger.info(`✅ Đã gửi nhắc nhở đã bỏ lỡ: ${reminder.message}`))
-                .catch((err) => logger.error(`❌ Lỗi khi gửi tin nhắn: ${err.message}`));
-        });
-    };
-
-    // Chạy thủ công ngay khi khởi động
-    runMissedJobs();
-
-    // Lên lịch gửi tin nhắn
     reminders.forEach((reminder, index) => {
-        schedule.scheduleJob(`reminder-${index}`, reminder.time, { tz: reminder.tz }, () => {
+        schedule.scheduleJob(`reminder-${index}`, reminder.time, async () => {
             logger.info(`⏰ Đang chạy lịch trình nhắc nhở ${index + 1} vào ${new Date().toString()}`);
-            channel.send(`@everyone ${reminder.message}`)
-                .then(() => logger.info(`✅ Đã gửi nhắc nhở: ${reminder.message}`))
-                .catch((err) => logger.error(`❌ Lỗi khi gửi tin nhắn: ${err.message}`));
+            const success = await retrySendMessage(channel, `@everyone ${reminder.message}`);
+            if (success) {
+                logger.info(`✅ Đã gửi nhắc nhở: ${reminder.message}`);
+            } else {
+                logger.error(`❌ Không thể gửi nhắc nhở sau nhiều lần thử: ${reminder.message}`);
+            }
         });
-        logger.info(`📅 Đã lên lịch nhắc nhở ${index + 1} vào ${reminder.time} (${reminder.tz})`);
+        logger.info(`📅 Đã lên lịch nhắc nhở ${index + 1} vào ${reminder.time}`);
     });
-
-    // Đăng ký lệnh slash
+    // Đăng ký lệnh slash (tùy chọn)
     try {
         const commands = [
             new SlashCommandBuilder()
@@ -86,7 +76,6 @@ client.once('ready', async () => {
         logger.error(`❌ Lỗi khi đăng ký lệnh slash: ${err.message}`);
     }
 });
-
 // Xử lý lệnh slash
 client.on('interactionCreate', async (interaction) => {
     if (!interaction.isCommand()) return;
@@ -99,7 +88,6 @@ client.on('interactionCreate', async (interaction) => {
         logger.info(`📡 Lệnh /status được gọi bởi ${interaction.user.tag}`);
     }
 });
-
 // Xử lý lỗi
 client.on('error', (err) => {
     logger.error(`❌ Lỗi client Discord: ${err.message}`);
@@ -128,7 +116,6 @@ const loginBot = async () => {
     }
 };
 loginBot();
-
 // Express server
 const express = require('express');
 const app = express();
