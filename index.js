@@ -37,8 +37,9 @@ const retrySendMessage = async (channel, message, retries = 3, delay = 5000) => 
     return false;
 };
 const reminders = [
-    {time: '0 */2 * * * *', message: 'Bắt đầu ASAKAI thôi mọi người!'},
-    {time: '0 */2 * * * *', message: 'Nhớ đừng quên daily report nhé: https://work-report.thk-hd-hn.vn/'},
+    {time: '59 8 * * * 1-5', message: 'Bắt đầu ASAKAI thôi mọi người!'},
+    {time: '0 12 * * * 1-5', message: 'Nghỉ ngơi ăn chưa thôi mọi người'},
+    {time: '45 16 * * * *', message: 'Nhớ đừng quên daily report nhé: https://work-report.thk-hd-hn.vn/'},
 ];
 
 client.once('ready', async () => {
