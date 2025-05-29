@@ -68,6 +68,8 @@ const reminders = [
     { time: '0 59 8 * * 1-5', message: 'Bắt đầu ASAKAI thôi mọi người!' }, // 08:59 thứ 2-6
     { time: '0 0 12 * * 1-5', message: 'Nghỉ trưa thôi mọi người' }, // 12:00 thứ 2-6
     { time: '0 50 13 * * 1-5', message: 'Chuẩn bị Nghỉ trưa thôi mọi người' }, // 13:41 thứ 2-6
+    { time: '0 55 13 * * 1-5', message: 'Chuẩn bị Nghỉ trưa thôi mọi người' }, // 13:41 thứ 2-6
+    { time: '0 0 14 * * 1-5', message: 'Chuẩn bị Nghỉ trưa thôi mọi người' }, // 13:41 thứ 2-6
     { time: '0 45 16 * * 1-5', message: 'Nhớ đừng quên daily report nhé: https://work-report.thk-hd-hn.vn/' }, // 16:45 thứ 2-6
 ];
 
