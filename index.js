@@ -1,5 +1,5 @@
 const { Client, GatewayIntentBits, Partials, SlashCommandBuilder } = require('discord.js');
-const schedule = require('node-schedule-tz');
+const schedule = require('node-schedule');
 const winston = require('winston');
 require('dotenv').config();
 
@@ -54,7 +54,7 @@ const retrySendMessage = async (channel, message, retries = 3, delay = 5000) => 
             await channel.send(message);
             return true;
         } catch (err) {
-            logger.error(`❌ Lỗi khi gửi tin nhắn (lần ${i + 1}/${retries}): ${err.message}`);
+            logger.error(`❌ Lỗi khi gửi tin nhắn (lần ${i + 1}/${retries}): ${err.message}, Channel ID: ${channel?.id || 'Không xác định'}`);
             if (i < retries - 1) {
                 logger.info(`⏳ Thử lại sau ${delay / 1000} giây...`);
                 await new Promise(resolve => setTimeout(resolve, delay));
@@ -66,13 +66,14 @@ const retrySendMessage = async (channel, message, retries = 3, delay = 5000) => 
 
 const reminders = [
     { time: '0 59 8 * * 1-5', message: 'Bắt đầu ASAKAI thôi mọi người!' }, // 08:59 thứ 2-6
-    { time: '0 0 12 * * 1-5', message: 'Nghỉ trưa thôi mọi người' },
-    { time: '0 30 13 * * 1-5', message: 'Chuẩn bị Nghỉ trưa thôi mọi người' },
+    { time: '0 0 12 * * 1-5', message: 'Nghỉ trưa thôi mọi người' }, // 12:00 thứ 2-6
+    { time: '0 50 13 * * 1-5', message: 'Chuẩn bị Nghỉ trưa thôi mọi người' }, // 13:41 thứ 2-6
     { time: '0 45 16 * * 1-5', message: 'Nhớ đừng quên daily report nhé: https://work-report.thk-hd-hn.vn/' }, // 16:45 thứ 2-6
 ];
 
 client.once('ready', async () => {
     console.log(`✅ Bot ${client.user.tag} đã sẵn sàng!`);
+    logger.info(`⏰ Thời gian hiện tại khi khởi động: ${new Date().toString()}`);
 
     const channel = client.channels.cache.get(process.env.CHANNEL_ID);
     const logChannel = client.channels.cache.get(process.env.LOG_CHANNEL_ID);
@@ -91,9 +92,9 @@ client.once('ready', async () => {
     }
 
     // Lên lịch gửi log mỗi 5 phút
-    schedule.scheduleJob('log-every-5-minutes', '*/5 * * * *', { tz: 'Asia/Ho_Chi_Minh' }, async () => {
+    schedule.scheduleJob('log-every-5-minutes', '*/5 * * * *', async () => {
         if (logChannel) {
-            const logMessage = `📊 [STATUS] Bot đang hoạt động. Số nhắc nhở: ${reminders.length}. Thời gian: ${new Date().toLocaleString('vi-VN', { timeZone: 'Asia/Ho_Chi_Minh' })}`;
+            const logMessage = `📊 [STATUS] Bot đang hoạt động. Số nhắc nhở: ${reminders.length}. Thời gian: ${new Date().toString()}`;
             const success = await retrySendMessage(logChannel, logMessage);
             if (success) {
                 logger.info(`✅ Đã gửi log trạng thái định kỳ`);
@@ -102,12 +103,12 @@ client.once('ready', async () => {
             }
         }
     });
-    logger.info('📅 Đã lên lịch gửi log trạng thái mỗi 5 phút');
+    logger.info('📅 Đã lên lịchrasng log trạng thái mỗi 5 phút');
 
     // Lên lịch các nhắc nhở
     reminders.forEach((reminder, index) => {
-        schedule.scheduleJob(`reminder-${index}`, reminder.time, { tz: 'Asia/Ho_Chi_Minh' }, async () => {
-            logger.info(`⏰ Đang chạy lịch trình nhắc nhở ${index + 1} vào ${new Date().toLocaleString('vi-VN', { timeZone: 'Asia/Ho_Chi_Minh' })}`);
+        schedule.scheduleJob(`reminder-${index}`, reminder.time, async () => {
+            logger.info(`⏰ Đang chạy lịch trình nhắc nhở ${index + 1} vào ${new Date().toString()}`);
             logger.info(`🔍 Kênh chính: ${channel ? channel.id : 'Không tìm thấy'}`);
             const success = await retrySendMessage(channel, `@everyone ${reminder.message}`);
             if (success) {
@@ -116,7 +117,7 @@ client.once('ready', async () => {
                 logger.error(`❌ Không thể gửi nhắc nhở sau nhiều lần thử: ${reminder.message}`);
             }
         });
-        logger.info(`📅 Đã lên lịch nhắc nhở ${index + 1} vào ${reminder.time} (múi giờ: Asia/Ho_Chi_Minh)`);
+        logger.info(`📅 Đã lên lịch nhắc nhở ${index + 1} vào ${reminder.time}`);
     });
 
     // Đăng ký lệnh slash
@@ -139,7 +140,7 @@ client.on('interactionCreate', async (interaction) => {
 
     if (interaction.commandName === 'status') {
         await interaction.reply({
-            content: `✅ Bot đang hoạt động! Hiện tại có ${reminders.length} nhắc nhở được lên lịch. Múi giờ: ${new Date().toLocaleString('vi-VN', { timeZone: 'Asia/Ho_Chi_Minh' })}`,
+            content: `✅ Bot đang hoạt động! Hiện tại có ${reminders.length} nhắc nhở được lên lịch. Thời gian: ${new Date().toString()}`,
             ephemeral: true,
         });
         logger.info(`📡 Lệnh /status được gọi bởi ${interaction.user.tag}`);
