@@ -28,13 +28,14 @@ const client = new Client({
 
 // Danh sách nhắc nhở
 const reminders = [
-    { time: '0 59 8 * * 1-5', message: 'Bắt đầu ASAKAI thôi mọi người!', tz: 'Asia/Ho_Chi_Minh' }, // 08:59 thứ 2-6
+    { time: '0 45 9 * * 1-5', message: 'Bắt đầu ASAKAI thôi mọi người!', tz: 'Asia/Ho_Chi_Minh' }, // 08:59 thứ 2-6
     { time: '0 45 16 * * 1-5', message: 'Nhớ đừng quên daily report nhé: https://work-report.thk-hd-hn.vn/', tz: 'Asia/Ho_Chi_Minh' }, // 16:45 thứ 2-6
 ];
 
-// K When bot đã sẵn sàng
+// Khi bot đã sẵn sàng
 client.once('ready', async () => {
     logger.info(`✅ Bot ${client.user.tag} đã sẵn sàng!`);
+    logger.info(`🌐 Múi giờ hiện tại: ${new Date().toString()}`);
 
     // Kiểm tra CHANNEL_ID
     const channel = client.channels.cache.get(process.env.CHANNEL_ID);
@@ -53,7 +54,7 @@ client.once('ready', async () => {
         logger.info(`📅 Đã lên lịch nhắc nhở ${index + 1} vào ${reminder.time} (${reminder.tz})`);
     });
 
-    // Đăng ký lệnh slash (tùy chọn)
+    // Đăng ký lệnh slash
     try {
         const commands = [
             new SlashCommandBuilder()
@@ -85,6 +86,14 @@ client.on('error', (err) => {
     logger.error(`❌ Lỗi client Discord: ${err.message}`);
 });
 
+client.on('disconnect', () => {
+    logger.warn('⚠ Bot đã ngắt kết nối, đang thử kết nối lại...');
+});
+
+client.on('reconnecting', () => {
+    logger.info('🔄 Bot đang kết nối lại...');
+});
+
 // Đăng nhập bot
 const loginBot = async () => {
     try {
@@ -101,10 +110,10 @@ const loginBot = async () => {
 };
 loginBot();
 
-// Express server để giữ bot hoạt động (optional, dùng cho hosting)
+// Express server để giữ bot hoạt động
 const express = require('express');
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000; // Sử dụng cổng từ Render
 
 app.get('/', (req, res) => res.send('Bot đang chạy!'));
 
