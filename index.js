@@ -90,8 +90,8 @@ client.once('ready', async () => {
         logger.transports.find(transport => transport instanceof DiscordTransport).logChannel = logChannel;
     }
 
-    // Lên lịch gửi log mỗi 5 phút
-    schedule.scheduleJob('log-every-5-minutes', '*/5 * * * *', async () => {
+    // Lên lịch gửi log mỗi 1 giờ
+    schedule.scheduleJob('log-every-hour', '0 * * * *', async () => {
         if (logChannel) {
             const logMessage = `📊 [STATUS] Bot đang hoạt động. Số nhắc nhở: ${reminders.length}. Thời gian: ${new Date().toString()}`;
             const success = await retrySendMessage(logChannel, logMessage);
@@ -102,7 +102,7 @@ client.once('ready', async () => {
             }
         }
     });
-    logger.info('📅 Đã lên lịchrasng log trạng thái mỗi 5 phút');
+    logger.info('📅 Đã lên lịch log trạng thái mỗi 1 giờ');
 
     // Lên lịch các nhắc nhở
     reminders.forEach((reminder, index) => {
