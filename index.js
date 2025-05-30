@@ -104,7 +104,7 @@ const reminders = [
         time: '0 45 16 * * 1-5',
         embed: () => new EmbedBuilder()
             .setTitle('📝 **HẾU HẾU! DAILY REPORT TIME!**')
-            .setDescription('⏰ **16:55 chiều** rồi nè! Đừng quên **báo cáo ngày** nha mọi người! 📊 Nhanh tay vào link báo cáo nào! 💪')
+            .setDescription('⏰ **16:45 chiều** rồi nè! Đừng quên **báo cáo ngày** nha mọi người! 📊 Nhanh tay vào link báo cáo nào! 💪')
             .setColor('#FF4500') // Màu cam nổi bật
             .addFields(
                 { name: '⏰ Thời gian', value: '4:55 PM', inline: true },
