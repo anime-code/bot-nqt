@@ -123,7 +123,7 @@ const retrySendMessage = async (channel, content, retries = 3, delay = 5000) => 
             if (typeof content === 'string') {
                 await channel.send({ content });
             } else {
-                await channel.send({ content: '@here', embeds: [content] });
+                await channel.send({ content: '@everyone', embeds: [content] });
             }
             return true;
         } catch (err) {
