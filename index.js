@@ -53,15 +53,15 @@ const getRandomLunchEmbed = () => {
     const lunchMessages = [
         {
             description: '🍜 **Tèn ten!** Đến giờ **nghỉ trưa** rồi nè! 😋 Đi ăn phở hay bún gì ngon đi, 12:00 trưa rùi! 🥳',
-            thumbnail: 'https://i.imgur.com/5Z9e7yK.png' // Hình bát phở
+            thumbnail: 'https://vietour.vn/images/hinh-bat-pho-vietour01.jpg' // Hình bát phở
         },
         {
             description: '🍔 **12:00 trưa** rồi! Giờ **nghỉ trưa** nè, ai ăn burger, ai ăn cơm tấm đây? 😎 Let’s go! 🎈',
-            thumbnail: 'https://i.imgur.com/8kXjW3n.png' // Hình burger
+            thumbnail: 'https://media.istockphoto.com/id/1412706588/vi/anh/hamburger-tr%C3%AAn-th%E1%BB%9Bt-th%E1%BB%A7-c%C3%B4ng-n%E1%BB%81n-t%C3%A2m-tr%E1%BA%A1ng-t%E1%BB%91i.jpg?s=612x612&w=0&k=20&c=xSxOsMObANKGI_AkLj0x29I1UqM84QYMbNeCJ4Sg8nY=' // Hình burger
         },
         {
             description: '🍣 **Nghỉ trưa** thôi nào! Sushi, bánh xèo hay trà sữa, chọn gì đây? 😋 **12:00** nha mọi người! 🚴‍♂️',
-            thumbnail: 'https://i.imgur.com/4fY2m9R.png' // Hình sushi
+            thumbnail: 'https://media.istockphoto.com/id/1555947107/vi/anh/set-sushi-v%C3%A0-maki.jpg?s=612x612&w=0&k=20&c=r_heT_qgK5SYpLrFd5M-U9v81w5kcj5zok05AZl5_rw=' // Hình sushi
         }
     ];
     return lunchMessages[Math.floor(Math.random() * lunchMessages.length)];
@@ -79,7 +79,7 @@ const reminders = [
                 { name: '⏰ Thời gian', value: '8:59 AM', inline: true },
                 { name: '📍 Kênh họp', value: 'Kiểm tra Zoom/Discord nha!', inline: true }
             )
-            .setThumbnail('https://i.imgur.com/3xY9Z2k.png') // Hình mặt trời
+            .setThumbnail('https://st.quantrimang.com/photos/image/2020/12/25/Hinh-chuc-buoi-sang-4.jpg') // Hình mặt trời
             .setFooter({ text: 'Bot nhắc nhở siêu xịn by NQT', iconURL: client.user.displayAvatarURL() })
             .setTimestamp()
     },
@@ -107,10 +107,10 @@ const reminders = [
             .setDescription('⏰ **16:45 chiều** rồi nè! Đừng quên **báo cáo ngày** nha mọi người! 📊 Nhanh tay vào link báo cáo nào! 💪')
             .setColor('#FF4500') // Màu cam nổi bật
             .addFields(
-                { name: '⏰ Thời gian', value: '4:55 PM', inline: true },
+                { name: '⏰ Thời gian', value: '4:45 PM', inline: true },
                 { name: '🔗 Link báo cáo', value: '[Work Report](https://work-report.thk-hd-hn.vn/)', inline: true }
             )
-            .setThumbnail('https://i.imgur.com/7pX8q9L.png') // Hình checklist
+            .setThumbnail('https://png.pngtree.com/png-clipart/20190614/original/pngtree-report-writing-line-filled-icon-png-image_3789245.jpg') // Hình checklist
             .setFooter({ text: 'Bot nhắc nhở siêu xịn by NQT', iconURL: client.user.displayAvatarURL() })
             .setTimestamp()
     }
