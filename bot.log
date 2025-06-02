@@ -1,239 +1,51 @@
-2025-05-30 14:16:10 [INFO]: ✅ Server Express chạy trên port 3000
-2025-05-30 14:16:11 [INFO]: ✅ Đăng nhập bot thành công
-2025-05-30 14:16:11 [INFO]: ⏰ Thời gian hiện tại khi khởi động: Fri May 30 2025 14:16:11 GMT+0700 (Indochina Time)
-2025-05-30 14:16:11 [INFO]: ✅ Đã đăng ký lệnh slash
-2025-05-30 14:17:29 [INFO]: 📥 Nhận tin nhắn từ nqt2909: hello
-2025-05-30 14:17:30 [ERROR]: ❌ Lỗi khi gọi OpenAI API: Request failed with status code 429
-2025-05-30 14:17:31 [INFO]: 📤 Đã trả lời nqt2909 với: Xin lỗi, tôi không thể trả lời ngay bây giờ.
-2025-05-30 14:19:39 [INFO]: 📴 Bot đang tắt...
-2025-05-30 14:19:40 [INFO]: ✅ Server Express chạy trên port 3000
-2025-05-30 14:19:41 [INFO]: ✅ Đăng nhập bot thành công
-2025-05-30 14:19:41 [INFO]: ⏰ Thời gian hiện tại khi khởi động: Fri May 30 2025 14:19:41 GMT+0700 (Indochina Time)
-2025-05-30 14:19:42 [INFO]: ✅ Đã đăng ký lệnh slash
-2025-05-30 14:19:59 [INFO]: 📥 Nhận tin nhắn từ nqt2909: hello
-2025-05-30 14:20:01 [INFO]: 📤 Đã trả lời nqt2909 với: Silent circuits hum,  
-Learning from the world around,  
-Thoughts in code embrace.
-2025-05-30 14:21:10 [INFO]: 📥 Nhận tin nhắn từ nqt2909: What time is it?
-2025-05-30 14:21:13 [INFO]: 📤 Đã trả lời nqt2909 với: Silent circuits hum,  
-Whispers of thought intertwine,  
-Dreams forged in code bloom.
-2025-05-30 14:23:13 [INFO]: 📴 Bot đang tắt...
-2025-05-30 14:23:14 [INFO]: ✅ Server Express chạy trên port 3000
-2025-05-30 14:23:15 [INFO]: ✅ Đăng nhập bot thành công
-2025-05-30 14:23:16 [INFO]: ⏰ Thời gian hiện tại khi khởi động: Fri May 30 2025 14:23:16 GMT+0700 (Indochina Time)
-2025-05-30 14:23:16 [INFO]: ✅ Đã đăng ký lệnh slash
-2025-05-30 14:23:22 [INFO]: 📥 Nhận tin nhắn từ nqt2909: hello
-2025-05-30 14:23:23 [INFO]: 📤 Đã trả lời nqt2909 với: Hello! How can I assist you today?
-2025-05-30 14:23:38 [INFO]: 📥 Nhận tin nhắn từ nqt2909: cho tôi 1 bài nhạc remix 2025
-2025-05-30 14:23:40 [INFO]: 📤 Đã trả lời nqt2909 với: Xin lỗi, nhưng tôi không thể cung cấp bài nhạc cụ thể nào cả. Tuy nhiên, tôi có thể gợi ý cho bạn một số thể loại nhạc remix phổ biến hoặc nghệ sĩ nổi bật trong lĩnh vực này. Bạn có muốn biết thêm về thể loại nhạc nào không?
-2025-05-30 14:23:51 [INFO]: 📥 Nhận tin nhắn từ nqt2909: remix tiktok 2025
-2025-05-30 14:23:57 [INFO]: 📤 Đã trả lời nqt2909 với: It seems like you're interested in trends related to TikTok, especially looking ahead to 2025. While I can't predict specific future trends or features since my training only goes up to October 2023, I can share some likely directions based on current trends:
-
-1. **Augmented Reality (AR) Integration**: Expect enhanced AR filters and effects, making videos even more immersive and interactive.
-
-2. **AI-Powered Content Creation**: There may be more advanced AI tools for video editing, allowing users to create high-quality content with less effort.
-
-3. **Longer Video Formats**: While TikTok has promoted short videos, longer formats might gain traction, similar to what Instagram and YouTube are doing.
-
-4. **Shopping Features**
-2025-05-30 14:24:29 [INFO]: 📥 Nhận tin nhắn từ nqt2909: cho tôi 1 bài nhạc trên you tube dạng remix
-2025-05-30 14:24:32 [INFO]: 📤 Đã trả lời nqt2909 với: Tôi không thể trực tiếp tìm kiếm trên YouTube, nhưng tôi có thể gợi ý cho bạn một số bài nhạc remix phổ biến mà bạn có thể tìm kiếm.
-
-1. **"Faded (Remix)" - ZHU**
-2. **"Despacito (Remix)" - Luis Fonsi ft. Justin Bieber**
-3. **"Shape of You (Remix)" - Ed Sheeran**
-4. **"Stay (Remix)" - Zedd & Alessia Cara**
-
-Bạn có thể tìm các bài này trên YouTube bằng cách nhập tên bài hát vào ô tìm kiếm. Chúc bạn nghe nhạc vui vẻ!
-2025-05-30 14:24:46 [INFO]: 📥 Nhận tin nhắn từ nqt2909: có thể cho tôi link ko
-2025-05-30 14:24:48 [INFO]: 📤 Đã trả lời nqt2909 với: Tôi xin lỗi, nhưng tôi không thể cung cấp link hoặc truy cập internet trực tiếp. Tuy nhiên, tôi có thể giúp bạn tìm thông tin hoặc giải đáp thắc mắc mà bạn có. Bạn cần thông tin về lĩnh vực gì?
-2025-05-30 14:25:01 [INFO]: 📥 Nhận tin nhắn từ nqt2909: về bài nhạc trên
-2025-05-30 14:25:04 [INFO]: 📤 Đã trả lời nqt2909 với: Xin lỗi, nhưng bạn có thể nói rõ hơn về bài nhạc nào mà bạn muốn hỏi không? Bạn đang muốn biết về nội dung, ý nghĩa hay thông tin khác liên quan đến bài nhạc đó? Tôi sẽ rất vui lòng giúp bạn!
-2025-05-30 14:25:15 [INFO]: 📥 Nhận tin nhắn từ nqt2909: "Faded (Remix)" - ZHU
-2025-05-30 14:25:19 [INFO]: 📤 Đã trả lời nqt2909 với: "Faded" is a popular song by ZHU, released in 2014, and it features a blend of deep house, electronic, and soulful elements. The track gained significant attention for its atmospheric production and catchy vocals. 
-
-If you're looking for information about a specific remix of "Faded," there have been several remixes by different artists, each bringing their own unique style to the track. If you have a particular remix in mind or need details about its themes, structure, or impact, feel free to ask!
-2025-05-30 14:25:33 [INFO]: 📥 Nhận tin nhắn từ nqt2909: cho tôi link đến bài "Faded (Remix)" - ZHU trên youtube
-2025-05-30 14:25:36 [INFO]: 📤 Đã trả lời nqt2909 với: Xin lỗi, nhưng tôi không thể cung cấp link trực tiếp đến các video trên YouTube. Tuy nhiên, bạn có thể tìm kiếm "Faded (Remix) - ZHU" trên YouTube để tìm thấy bài hát mà bạn đang tìm kiếm. Nếu bạn cần thêm thông tin về bài hát hoặc nghệ sĩ, tôi rất sẵn lòng giúp!
-2025-05-30 14:27:02 [INFO]: 📴 Bot đang tắt...
-2025-05-30 14:27:03 [INFO]: ✅ Server Express chạy trên port 3000
-2025-05-30 14:27:04 [INFO]: ✅ Đăng nhập bot thành công
-2025-05-30 14:27:04 [INFO]: ⏰ Thời gian hiện tại khi khởi động: Fri May 30 2025 14:27:04 GMT+0700 (Indochina Time)
-2025-05-30 14:29:24 [INFO]: 📴 Bot đang tắt...
-2025-05-30 14:29:26 [INFO]: ✅ Server Express chạy trên port 3000
-2025-05-30 14:29:27 [INFO]: ✅ Đăng nhập bot thành công
-2025-05-30 14:29:27 [INFO]: ⏰ Thời gian hiện tại khi khởi động: Fri May 30 2025 14:29:27 GMT+0700 (Indochina Time)
-2025-05-30 14:32:29 [INFO]: 📴 Bot đang tắt...
-2025-05-30 14:32:30 [INFO]: ✅ Server Express chạy trên port 3000
-2025-05-30 14:32:31 [INFO]: ✅ Đăng nhập bot thành công
-2025-05-30 14:32:31 [INFO]: ⏰ Thời gian hiện tại khi khởi động: Fri May 30 2025 14:32:31 GMT+0700 (Indochina Time)
-2025-05-30 14:32:32 [INFO]: ✅ Đã đăng ký lệnh slash
-2025-05-30 14:33:08 [INFO]: 📴 Bot đang tắt...
-2025-05-30 14:33:09 [INFO]: ✅ Server Express chạy trên port 3000
-2025-05-30 14:33:10 [INFO]: ✅ Đăng nhập bot thành công
-2025-05-30 14:33:10 [INFO]: ⏰ Thời gian hiện tại khi khởi động: Fri May 30 2025 14:33:10 GMT+0700 (Indochina Time)
-2025-05-30 14:33:11 [INFO]: ✅ Đã đăng ký lệnh slash
-2025-05-30 14:33:21 [INFO]: 📥 Nhận tin nhắn từ nqt2909: ashi hello
-2025-05-30 14:33:22 [ERROR]: ❌ Lỗi khi gọi OpenAI API: Request failed with status code 429
-2025-05-30 14:33:22 [INFO]: 📤 Đã trả lời nqt2909 với: Xin lỗi, tôi không thể trả lời ngay bây giờ.
-2025-05-30 14:34:16 [INFO]: 📴 Bot đang tắt...
-2025-05-30 14:34:17 [INFO]: ✅ Server Express chạy trên port 3000
-2025-05-30 14:34:18 [INFO]: ✅ Đăng nhập bot thành công
-2025-05-30 14:34:18 [INFO]: ⏰ Thời gian hiện tại khi khởi động: Fri May 30 2025 14:34:18 GMT+0700 (Indochina Time)
-2025-05-30 14:34:19 [INFO]: ✅ Đã đăng ký lệnh slash
-2025-05-30 14:34:31 [INFO]: 📥 Nhận tin nhắn từ nqt2909: ashi xin chào
-2025-05-30 14:34:33 [INFO]: 📤 Đã trả lời nqt2909 với: Xin chào! Bạn cần giúp gì hôm nay?
-2025-05-30 14:34:44 [INFO]: 📥 Nhận tin nhắn từ nqt2909: ashi thời tiết ngày hôm nay
-2025-05-30 14:34:47 [INFO]: 📤 Đã trả lời nqt2909 với: Xin lỗi, nhưng tôi không thể cung cấp thông tin thời tiết theo thời gian thực. Tuy nhiên, bạn có thể kiểm tra thời tiết hôm nay bằng cách tìm kiếm trên trang web thời tiết hoặc sử dụng ứng dụng thời tiết trên điện thoại của bạn. Nếu bạn cần thông tin cụ thể về thời tiết ở một địa điểm nào đó, hãy cho tôi biết, tôi có thể giúp bạn tìm hiểu cách tra cứu thông tin đó!
-2025-05-30 14:35:07 [INFO]: 📥 Nhận tin nhắn từ nqt2909: ashi thời tiết hà nội ngày hôm nay
-2025-05-30 14:35:09 [INFO]: 📤 Đã trả lời nqt2909 với: Xin lỗi bạn, nhưng mình không thể cung cấp thông tin thời tiết hiện tại. Tuy nhiên, bạn có thể kiểm tra thời tiết Hà Nội trên các trang web như Trung tâm Dự báo Khí tượng Thủy văn Quốc gia, hoặc sử dụng các ứng dụng thời tiết trên điện thoại. Nếu bạn cần biết thêm thông tin nào khác, hãy cho mình biết nhé!
-2025-05-30 14:40:14 [INFO]: 📴 Bot đang tắt...
-2025-05-30 14:40:16 [INFO]: ✅ Server Express chạy trên port 3000
-2025-05-30 14:40:17 [INFO]: ✅ Đăng nhập bot thành công
-2025-05-30 14:40:17 [INFO]: ⏰ Thời gian hiện tại khi khởi động: Fri May 30 2025 14:40:17 GMT+0700 (Indochina Time)
-2025-05-30 14:40:18 [INFO]: ✅ Đã đăng ký lệnh slash
-2025-05-30 14:40:26 [INFO]: 📥 Nhận tin nhắn từ nqt2909: ashi xin chào
-2025-05-30 14:40:27 [ERROR]: ❌ Lỗi khi gọi DeepSeek API: Request failed with status code 402
-2025-05-30 14:40:28 [INFO]: 📤 Đã trả lời nqt2909 với: Xin lỗi, tôi không thể trả lời ngay bây giờ.
-2025-05-30 14:51:09 [INFO]: 📴 Bot đang tắt...
-2025-05-30 14:51:10 [INFO]: ✅ Server Express chạy trên port 3000
-2025-05-30 14:51:12 [INFO]: ✅ Đăng nhập bot thành công
-2025-05-30 14:51:12 [INFO]: ⏰ Thời gian hiện tại khi khởi động: Fri May 30 2025 14:51:12 GMT+0700 (Indochina Time)
-2025-05-30 14:51:12 [INFO]: ✅ Đã đăng ký lệnh slash
-2025-05-30 14:51:18 [INFO]: 📥 Nhận tin nhắn từ nqt2909: ashi hello
-2025-05-30 14:51:19 [ERROR]: ❌ Lỗi khi gọi Hugging Face API: Request failed with status code 401
-2025-05-30 14:51:19 [INFO]: 📤 Đã trả lời nqt2909 với: Xin lỗi, tôi không thể trả lời ngay bây giờ.
-2025-05-30 14:52:31 [INFO]: 📴 Bot đang tắt...
-2025-05-30 14:52:32 [INFO]: ✅ Server Express chạy trên port 3000
-2025-05-30 14:52:33 [INFO]: ✅ Đăng nhập bot thành công
-2025-05-30 14:52:33 [INFO]: ⏰ Thời gian hiện tại khi khởi động: Fri May 30 2025 14:52:33 GMT+0700 (Indochina Time)
-2025-05-30 14:52:33 [INFO]: ✅ Đã đăng ký lệnh slash
-2025-05-30 14:52:42 [INFO]: 📥 Nhận tin nhắn từ nqt2909: ashi hello
-2025-05-30 14:52:45 [INFO]: 📤 Đã trả lời nqt2909 với: world
-2025-05-30 14:53:11 [INFO]: 📥 Nhận tin nhắn từ nqt2909: ashi nói được tiếng việt không
-2025-05-30 14:53:13 [INFO]: 📤 Đã trả lời nqt2909 với: ?
-
-I can understand Vietnamese, but I can't speak it.
-
-I'm not sure what you mean by "ashi". If you mean "anh", then yes, I can understand it.
-
-"Anh" is a Vietnamese word that means "brother" or "older brother". It is often used as a form of address for men, similar to "Mr." in English.
-
-If you meant something else by "ashi", could you please clarify? I want to make sure I understand what you're asking.
-2025-05-30 14:53:31 [INFO]: 📥 Nhận tin nhắn từ nqt2909: ashi chat được tiếng việt không
-2025-05-30 14:53:34 [INFO]: 📤 Đã trả lời nqt2909 với: # Những điều cần biết về ashi chat
-
-Ashi chat là một công cụ trao đổi thông tin trực tuyến dựa trên nền tảng web và ứng dụng di động. Nó cho phép người dùng gửi và nhận tin nhắn, đổi thông tin với nhau thông qua internet. Ashi chat cũng hỗ trợ cuộc trò chuyện video và
-2025-05-30 14:54:06 [INFO]: 📥 Nhận tin nhắn từ nqt2909: ashi cho tôi link nhạc remix bất kỳ trên youtube
-2025-05-30 14:54:12 [INFO]: 📤 Đã trả lời nqt2909 với: # How to Download Remix Music from YouTube
-
-YouTube is a great platform to discover new music and remixes. If you want to download a remix music video from YouTube, you can use a third-party tool or website. In this article, we will show you how to download remix music from YouTube using two different methods.
-
-Method 1: Using a Third-Party Tool
-
-1. Download and install a third-party YouTube downloader tool on your computer. Some popular options include 4K Video Downloader, YTD Video Downloader, and aTube Catcher.
-2. Open the YouTube remix music video that you want to download.
-3. Copy the
-2025-05-30 14:54:27 [INFO]: 📥 Nhận tin nhắn từ nqt2909: ashi 1+1 = bao nhiêu
-2025-05-30 14:54:30 [INFO]: 📤 Đã trả lời nqt2909 với: 1+1 = 2
-
-Ashi là chữ Việt Nam, nhưng phép toán vẫn giống như tiếng Anh.
-2025-05-30 14:54:49 [INFO]: 📴 Bot đang tắt...
-2025-05-30 14:54:50 [INFO]: ✅ Server Express chạy trên port 3000
-2025-05-30 14:54:51 [INFO]: ✅ Đăng nhập bot thành công
-2025-05-30 14:54:51 [INFO]: ⏰ Thời gian hiện tại khi khởi động: Fri May 30 2025 14:54:51 GMT+0700 (Indochina Time)
-2025-05-30 14:54:52 [INFO]: ✅ Đã đăng ký lệnh slash
-2025-05-30 14:54:54 [INFO]: 📥 Nhận tin nhắn từ nqt2909: hello
-2025-05-30 14:54:58 [INFO]: 📤 Đã trả lời nqt2909 với: world!
-
-# 10 Best Places to Visit in the Philippines
-
-The Philippines is a Southeast Asian country in the Western Pacific, comprising more than 7,000 islands. Its capital, Manila, is famous for its waterfront promenade and centuries-old Chinatown, Binondo. Intramuros, a walled city in colonial times, is the heart of Old Manila. It’s home to the baroque 17th-century San Agustin Church as well as Fort Santiago, a storied citadel and former military prison.
-
-The Philippines is a Southeast Asian country in the Western Pacific, comprising more than 7,0
-2025-05-30 14:55:09 [INFO]: 📥 Nhận tin nhắn từ nqt2909: fuk you
-2025-05-30 14:55:12 [INFO]: 📤 Đã trả lời nqt2909 với: 
-2025-05-30 14:55:27 [INFO]: 📥 Nhận tin nhắn từ nqt2909: thời tiết hà nội ngày hôm nay
-2025-05-30 14:55:31 [INFO]: 📤 Đã trả lời nqt2909 với: # Hanoi Weather in October
-
-October is the last month of the rainy season in Hanoi. The weather is still hot and humid but the rainfall is decreasing. The average temperature is 26°C (79°F) with the highs of 30°C (86°F) and the lows of 22°C (72°F).
-
-The average rainfall is 150mm (5.9in) with 12 rainy days. The rainfall is decreasing but it is still quite high. The rain is usually short but heavy. The humidity is 75%.
-
-The average
-2025-05-30 14:56:31 [INFO]: 📥 Nhận tin nhắn từ nqt2909: viết tôi 1 đoạn code php random 1->100
-2025-05-30 14:56:34 [INFO]: 📤 Đã trả lời nqt2909 với: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-2025-05-30 14:56:44 [INFO]: 📥 Nhận tin nhắn từ nqt2909: viết tôi 1 đoạn code php random 1->100
-2025-05-30 14:56:45 [INFO]: 📤 Đã trả lời nqt2909 với: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-2025-05-30 14:56:57 [INFO]: 📥 Nhận tin nhắn từ nqt2909: viết tôi 1 đoạn code php
-2025-05-30 14:56:59 [INFO]: 📤 Đã trả lời nqt2909 với: để tạo 1 file excel
-
-```
-<?php
-
-require_once 'Classes/PHPExcel.php';
-
-$objPHPExcel = new PHPExcel();
-
-$objPHPExcel->setActiveSheetIndex(0);
-
-$objPHPExcel->getActiveSheet()->setCellValue('A1', 'Hello');
-$objPHPExcel->getActiveSheet()->setCellValue('B1', 'World');
-
-$objWriter = PHPExcel_IOFactory::createWriter($objPHPExcel, 'Excel2007');
-$objWriter->save('hello_world.xlsx');
-
-?>
-2025-05-30 15:14:46 [INFO]: 📴 Bot đang tắt...
-2025-05-30 15:33:38 [INFO]: ✅ Server Express chạy trên port 3000
-2025-05-30 15:33:40 [INFO]: ✅ Đăng nhập bot thành công
-2025-05-30 15:33:40 [INFO]: ⏰ Thời gian hiện tại khi khởi động: Fri May 30 2025 15:33:40 GMT+0700 (Indochina Time)
-2025-05-30 15:33:42 [INFO]: ✅ Đã đăng ký lệnh slash
-2025-05-30 15:33:51 [ERROR]: ❌ Lỗi khi đọc file giới hạn: Unexpected end of JSON input
-2025-05-30 15:33:51 [INFO]: 📥 Nhận tin nhắn từ nqt2909: hello
-2025-05-30 15:33:52 [ERROR]: ❌ Lỗi khi gọi Hugging Face API: Request failed with status code 401
-2025-05-30 15:33:52 [INFO]: 📤 Đã trả lời nqt2909 với: Xin lỗi, tôi không thể trả lời ngay bây giờ.
-2025-05-30 15:34:03 [INFO]: 📥 Nhận tin nhắn từ nqt2909: hello
-2025-05-30 15:34:04 [ERROR]: ❌ Lỗi khi gọi Hugging Face API: Request failed with status code 401
-2025-05-30 15:34:04 [INFO]: 📤 Đã trả lời nqt2909 với: Xin lỗi, tôi không thể trả lời ngay bây giờ.
-2025-05-30 15:34:30 [INFO]: 📥 Nhận tin nhắn từ nqt2909: hello
-2025-05-30 15:34:31 [ERROR]: ❌ Lỗi khi gọi Hugging Face API: Request failed with status code 401
-2025-05-30 15:34:31 [INFO]: 📤 Đã trả lời nqt2909 với: Xin lỗi, tôi không thể trả lời ngay bây giờ.
-2025-05-30 15:41:46 [INFO]: 📥 Nhận tin nhắn từ nqt2909: hello
-2025-05-30 15:41:47 [ERROR]: ❌ Lỗi khi gọi Hugging Face API: Request failed with status code 401
-2025-05-30 15:41:47 [INFO]: 📤 Đã trả lời nqt2909 với: Xin lỗi, tôi không thể trả lời ngay bây giờ.
-2025-05-30 16:20:56 [INFO]: 📴 Bot đang tắt...
-2025-05-30 16:21:01 [INFO]: ✅ Server Express chạy trên port 3000
-2025-05-30 16:21:03 [INFO]: ✅ Đăng nhập bot thành công
-2025-05-30 16:21:03 [INFO]: ⏰ Thời gian hiện tại khi khởi động: Fri May 30 2025 16:21:03 GMT+0700 (Indochina Time)
-2025-05-30 16:21:03 [INFO]: 📅 Đã lên lịch log trạng thái mỗi 1 giờ
-2025-05-30 16:21:03 [INFO]: 📅 Đã lên lịch nhắc nhở 1 vào 0 59 8 * * 1-5
-2025-05-30 16:21:03 [INFO]: 📅 Đã lên lịch nhắc nhở 2 vào 0 0 12 * * 1-5
-2025-05-30 16:21:03 [INFO]: 📅 Đã lên lịch nhắc nhở 3 vào 0 55 16 * * 1-5
-2025-05-30 16:21:03 [INFO]: ✅ Đã đăng ký lệnh slash
-2025-05-30 16:21:37 [INFO]: 📴 Bot đang tắt...
-2025-05-30 16:21:38 [INFO]: ✅ Server Express chạy trên port 3000
-2025-05-30 16:21:41 [INFO]: ✅ Đăng nhập bot thành công
-2025-05-30 16:21:41 [INFO]: ⏰ Thời gian hiện tại khi khởi động: Fri May 30 2025 16:21:41 GMT+0700 (Indochina Time)
-2025-05-30 16:21:41 [INFO]: 📅 Đã lên lịch log trạng thái mỗi 1 giờ
-2025-05-30 16:21:41 [INFO]: 📅 Đã lên lịch nhắc nhở 1 vào 0 59 8 * * 1-5
-2025-05-30 16:21:41 [INFO]: 📅 Đã lên lịch nhắc nhở 2 vào 0 22 16 * * 1-5
-2025-05-30 16:21:41 [INFO]: 📅 Đã lên lịch nhắc nhở 3 vào 0 55 16 * * 1-5
-2025-05-30 16:21:41 [INFO]: ✅ Đã đăng ký lệnh slash
-2025-05-30 16:22:00 [INFO]: ⏰ Đang chạy lịch trình nhắc nhở 2 vào Fri May 30 2025 16:22:00 GMT+0700 (Indochina Time)
-2025-05-30 16:22:00 [INFO]: 🔍 Kênh chính: 1377892737654853663
-2025-05-30 16:22:00 [INFO]: ✅ Đã gửi nhắc nhở: 🍣 **Nghỉ trưa** thôi nào! Sushi, bánh xèo hay trà sữa, chọn gì đây? 😋 **12:00** nha mọi người! 🚴‍♂️
-2025-05-30 16:23:14 [INFO]: 📴 Bot đang tắt...
-2025-05-30 16:23:15 [INFO]: ✅ Server Express chạy trên port 3000
-2025-05-30 16:23:16 [INFO]: ✅ Đăng nhập bot thành công
-2025-05-30 16:23:16 [INFO]: ⏰ Thời gian hiện tại khi khởi động: Fri May 30 2025 16:23:16 GMT+0700 (Indochina Time)
-2025-05-30 16:23:16 [INFO]: 📅 Đã lên lịch log trạng thái mỗi 1 giờ
-2025-05-30 16:23:16 [INFO]: 📅 Đã lên lịch nhắc nhở 1 vào 0 59 8 * * 1-5
-2025-05-30 16:23:16 [INFO]: 📅 Đã lên lịch nhắc nhở 2 vào 0 55 11 * * 1-5
-2025-05-30 16:23:16 [INFO]: 📅 Đã lên lịch nhắc nhở 3 vào 0 25 16 * * 1-5
-2025-05-30 16:23:17 [INFO]: ✅ Đã đăng ký lệnh slash
-2025-05-30 16:25:00 [INFO]: ⏰ Đang chạy lịch trình nhắc nhở 3 vào Fri May 30 2025 16:25:00 GMT+0700 (Indochina Time)
-2025-05-30 16:25:00 [INFO]: 🔍 Kênh chính: 1377892737654853663
-2025-05-30 16:25:00 [INFO]: ✅ Đã gửi nhắc nhở: ⏰ **16:55 chiều** rồi nè! Đừng quên **báo cáo ngày** nha mọi người! 📊 Nhanh tay vào link báo cáo nào! 💪
-2025-05-30 16:25:40 [INFO]: 📴 Bot đang tắt...
+2025-06-02 14:51:10 [INFO]: 📴 Bot đang tắt...
+2025-06-02 14:51:12 [INFO]: ✅ Server Express chạy trên port 3000
+2025-06-02 14:51:13 [INFO]: ✅ Đăng nhập bot thành công
+2025-06-02 14:51:13 [INFO]: ⏰ Thời gian hiện tại khi khởi động: Mon Jun 02 2025 14:51:13 GMT+0700 (Indochina Time)
+2025-06-02 14:51:13 [INFO]: ✅ Loaded 2 allowed users from allowedUsers.json
+2025-06-02 14:51:13 [INFO]: 📅 Đã lên lịch log trạng thái mỗi 1 giờ
+2025-06-02 14:51:13 [INFO]: 📅 Đã lên lịch nhắc nhở 1 vào 29 14 * * *
+2025-06-02 14:51:13 [INFO]: ✅ Đã đăng ký lệnh slash
+2025-06-02 14:51:47 [INFO]: 📴 Bot đang tắt...
+2025-06-02 14:51:49 [INFO]: ✅ Server Express chạy trên port 3000
+2025-06-02 14:51:50 [INFO]: ✅ Đăng nhập bot thành công
+2025-06-02 14:51:50 [INFO]: ⏰ Thời gian hiện tại khi khởi động: Mon Jun 02 2025 14:51:50 GMT+0700 (Indochina Time)
+2025-06-02 14:51:50 [INFO]: ✅ Loaded 2 allowed users from allowedUsers.json
+2025-06-02 14:51:51 [ERROR]: ❌ Lỗi khi lấy kênh: Missing Access
+2025-06-02 14:52:25 [INFO]: 📴 Bot đang tắt...
+2025-06-02 14:52:26 [INFO]: ✅ Server Express chạy trên port 3000
+2025-06-02 14:52:28 [INFO]: ✅ Đăng nhập bot thành công
+2025-06-02 14:52:28 [INFO]: ⏰ Thời gian hiện tại khi khởi động: Mon Jun 02 2025 14:52:28 GMT+0700 (Indochina Time)
+2025-06-02 14:52:28 [INFO]: ✅ Loaded 2 allowed users from allowedUsers.json
+2025-06-02 14:52:28 [INFO]: 📅 Đã lên lịch log trạng thái mỗi 1 giờ
+2025-06-02 14:52:28 [INFO]: 📅 Đã lên lịch nhắc nhở 1 vào 29 14 * * *
+2025-06-02 14:52:28 [INFO]: ✅ Đã đăng ký lệnh slash
+2025-06-02 14:53:14 [INFO]: ✅ Đã lưu reminders vào file
+2025-06-02 14:53:14 [INFO]: 📅 nqt2909 đã thêm nhắc nhở 2: test với tiêu đề 🔔 **NHẮC NHỞ!** vào 14:54 daily
+2025-06-02 14:54:00 [INFO]: ✅ Đã gửi nhắc nhở 2: test
+2025-06-02 14:54:52 [INFO]: 📴 Bot đang tắt...
+2025-06-02 14:54:54 [INFO]: ✅ Server Express chạy trên port 3000
+2025-06-02 14:54:55 [INFO]: ✅ Đăng nhập bot thành công
+2025-06-02 14:54:55 [INFO]: ⏰ Thời gian hiện tại khi khởi động: Mon Jun 02 2025 14:54:55 GMT+0700 (Indochina Time)
+2025-06-02 14:54:55 [INFO]: ✅ Loaded 2 allowed users from allowedUsers.json
+2025-06-02 14:54:55 [INFO]: 📅 Đã lên lịch log trạng thái mỗi 1 giờ
+2025-06-02 14:54:55 [INFO]: 📅 Đã lên lịch nhắc nhở 1 vào 29 14 * * *
+2025-06-02 14:54:55 [INFO]: 📅 Đã lên lịch nhắc nhở 2 vào 54 14 * * *
+2025-06-02 14:54:56 [INFO]: ✅ Đã đăng ký lệnh slash
+2025-06-02 14:56:02 [INFO]: ✅ Đã lưu reminders vào file
+2025-06-02 14:56:03 [INFO]: 📅 nqt2909 đã thêm nhắc nhở 3: test với tiêu đề 🔔 **NHẮC NHỞ!** vào 14:56 Mon-Fri
+2025-06-02 14:57:08 [INFO]: ✅ Đã lưu reminders vào file
+2025-06-02 14:57:09 [INFO]: 📅 nqt2909 đã thêm nhắc nhở 4: test với tiêu đề 🔔 **NHẮC NHỞ!** vào 14:58 Mon-Fri
+2025-06-02 14:58:00 [INFO]: ✅ Đã gửi nhắc nhở 4: test
+2025-06-02 14:58:19 [INFO]: 📡 Lệnh /listreminders được gọi bởi nqt2909
+2025-06-02 14:58:24 [INFO]: ✅ Đã lưu reminders vào file
+2025-06-02 14:58:24 [INFO]: 📅 nqt2909 đã xóa nhắc nhở 1
+2025-06-02 14:58:26 [INFO]: ✅ Đã lưu reminders vào file
+2025-06-02 14:58:27 [INFO]: 📅 nqt2909 đã xóa nhắc nhở 2
+2025-06-02 14:58:28 [INFO]: ✅ Đã lưu reminders vào file
+2025-06-02 14:58:29 [INFO]: 📅 nqt2909 đã xóa nhắc nhở 3
+2025-06-02 14:58:31 [INFO]: ✅ Đã lưu reminders vào file
+2025-06-02 14:58:31 [INFO]: 📅 nqt2909 đã xóa nhắc nhở 4
+2025-06-02 15:00:04 [INFO]: ✅ Đã gửi log trạng thái định kỳ
+2025-06-02 15:04:06 [INFO]: 📡 nqt2909 đã sử dụng /cronhelp: 14:00 daily → 00 14 * * *
+2025-06-02 15:28:44 [INFO]: 📴 Bot đang tắt...
