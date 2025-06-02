@@ -330,7 +330,7 @@ client.once('ready', async () => {
                 .setName('status')
                 .setDescription('Kiểm tra trạng thái của bot'),
             new SlashCommandBuilder()
-                .setName('add_reminder')
+                .setName('addreminder')
                 .setDescription('Thêm một nhắc nhở mới (dùng cron)')
                 .addStringOption(option =>
                     option.setName('time')
@@ -353,7 +353,7 @@ client.once('ready', async () => {
                         .setRequired(false)
                 ),
             new SlashCommandBuilder()
-                .setName('easy_reminder')
+                .setName('easyreminder')
                 .setDescription('Thêm một nhắc nhở mới (dùng thời gian dễ đọc)')
                 .addStringOption(option =>
                     option.setName('time')
@@ -386,7 +386,7 @@ client.once('ready', async () => {
                         .setRequired(false)
                 ),
             new SlashCommandBuilder()
-                .setName('cron_help')
+                .setName('cronhelp')
                 .setDescription('Xem cron expression từ thời gian và ngày')
                 .addStringOption(option =>
                     option.setName('time')
@@ -399,10 +399,10 @@ client.once('ready', async () => {
                         .setRequired(true)
                 ),
             new SlashCommandBuilder()
-                .setName('list_reminders')
+                .setName('listreminders')
                 .setDescription('Liệt kê tất cả nhắc nhở'),
             new SlashCommandBuilder()
-                .setName('edit_reminder')
+                .setName('editreminder')
                 .setDescription('Chỉnh sửa một nhắc nhở')
                 .addStringOption(option =>
                     option.setName('id')
