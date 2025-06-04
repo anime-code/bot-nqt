@@ -237,3 +237,101 @@ $objWriter->save('hello_world.xlsx');
 2025-05-30 16:25:00 [INFO]: 🔍 Kênh chính: 1377892737654853663
 2025-05-30 16:25:00 [INFO]: ✅ Đã gửi nhắc nhở: ⏰ **16:55 chiều** rồi nè! Đừng quên **báo cáo ngày** nha mọi người! 📊 Nhanh tay vào link báo cáo nào! 💪
 2025-05-30 16:25:40 [INFO]: 📴 Bot đang tắt...
+2025-06-03 10:00:00 [INFO]: ✅ Đã gửi log trạng thái định kỳ
+2025-06-03 10:23:30 [INFO]: 📴 Bot đang tắt...
+2025-06-03 10:33:15 [INFO]: ✅ Server Express chạy trên port 3000
+2025-06-03 10:33:17 [INFO]: ✅ Đăng nhập bot thành công
+2025-06-03 10:33:17 [INFO]: ⏰ Thời gian hiện tại khi khởi động: Tue Jun 03 2025 10:33:17 GMT+0700 (Indochina Time)
+2025-06-03 10:33:17 [INFO]: 📅 Đã lên lịch log trạng thái mỗi 1 giờ
+2025-06-03 10:33:17 [INFO]: 📅 Đã lên lịch nhắc nhở 1 vào 0 59 8 * * 1-5
+2025-06-03 10:33:17 [INFO]: 📅 Đã lên lịch nhắc nhở 2 vào 0 55 11 * * 1-5
+2025-06-03 10:33:17 [INFO]: 📅 Đã lên lịch nhắc nhở 3 vào 0 45 16 * * 1-5
+2025-06-03 10:33:17 [INFO]: 📅 Đã lên lịch báo cáo non-submitters vào 17:00 thứ 2–6
+2025-06-03 10:33:17 [INFO]: ✅ Đã đăng ký lệnh slash
+2025-06-03 10:34:00 [INFO]: ⏰ Đang chạy báo cáo non-submitters vào Tue Jun 03 2025 10:34:00 GMT+0700 (Indochina Time)
+2025-06-03 10:34:00 [INFO]: ✅ Fetched 10 reports for team 1 (start: 0) on 2025-06-03
+2025-06-03 10:34:00 [INFO]: ✅ Fetched 11 reports for team 2 (start: 0) on 2025-06-03
+2025-06-03 10:34:00 [INFO]: 📋 Tìm thấy 21 người chưa nộp báo cáo
+2025-06-03 10:34:01 [INFO]: ✅ Đã tag 20 người chưa nộp báo cáo trong kênh chính
+2025-06-03 10:44:45 [INFO]: 📴 Bot đang tắt...
+2025-06-03 10:44:47 [INFO]: ✅ Server Express chạy trên port 3000
+2025-06-03 10:44:48 [INFO]: ✅ Đăng nhập bot thành công
+2025-06-03 10:44:48 [INFO]: ⏰ Thời gian hiện tại khi khởi động: Tue Jun 03 2025 10:44:48 GMT+0700 (Indochina Time)
+2025-06-03 10:44:48 [INFO]: 📅 Đã lên lịch log trạng thái mỗi 1 giờ
+2025-06-03 10:44:48 [INFO]: 📅 Đã lên lịch nhắc nhở 1 vào 0 59 8 * * 1-5
+2025-06-03 10:44:48 [INFO]: 📅 Đã lên lịch nhắc nhở 2 vào 0 55 11 * * 1-5
+2025-06-03 10:44:48 [INFO]: 📅 Đã lên lịch nhắc nhở 3 vào 0 45 16 * * 1-5
+2025-06-03 10:44:48 [INFO]: 📅 Đã lên lịch báo cáo non-submitters vào 17:00 thứ 2–6
+2025-06-03 10:44:49 [INFO]: ✅ Đã đăng ký lệnh slash
+2025-06-03 10:45:00 [INFO]: ⏰ Đang chạy báo cáo non-submitters vào Tue Jun 03 2025 10:45:00 GMT+0700 (Indochina Time)
+2025-06-03 10:45:00 [INFO]: ✅ Fetched 10 reports for team 1 (start: 0) on 2025-06-03
+2025-06-03 10:45:01 [INFO]: ✅ Fetched 11 reports for team 2 (start: 0) on 2025-06-03
+2025-06-03 10:45:01 [INFO]: 📋 Tìm thấy 21 người chưa nộp báo cáo
+2025-06-03 10:45:02 [WARN]: ⚠ Không tìm thấy Discord ID cho non-submitters
+2025-06-03 10:45:53 [INFO]: 📴 Bot đang tắt...
+2025-06-03 10:45:55 [INFO]: ✅ Server Express chạy trên port 3000
+2025-06-03 10:46:10 [INFO]: ✅ Server Express chạy trên port 3000
+2025-06-03 10:46:11 [INFO]: ✅ Đăng nhập bot thành công
+2025-06-03 10:46:11 [INFO]: ⏰ Thời gian hiện tại khi khởi động: Tue Jun 03 2025 10:46:11 GMT+0700 (Indochina Time)
+2025-06-03 10:46:11 [INFO]: 📅 Đã lên lịch log trạng thái mỗi 1 giờ
+2025-06-03 10:46:11 [INFO]: 📅 Đã lên lịch nhắc nhở 1 vào 0 59 8 * * 1-5
+2025-06-03 10:46:11 [INFO]: 📅 Đã lên lịch nhắc nhở 2 vào 0 55 11 * * 1-5
+2025-06-03 10:46:11 [INFO]: 📅 Đã lên lịch nhắc nhở 3 vào 0 45 16 * * 1-5
+2025-06-03 10:46:11 [INFO]: 📅 Đã lên lịch báo cáo non-submitters vào 17:00 thứ 2–6
+2025-06-03 10:46:11 [INFO]: ✅ Đã đăng ký lệnh slash
+2025-06-03 10:47:00 [INFO]: ⏰ Đang chạy báo cáo non-submitters vào Tue Jun 03 2025 10:47:00 GMT+0700 (Indochina Time)
+2025-06-03 10:47:00 [INFO]: ✅ Fetched 10 reports for team 1 (start: 0) on 2025-06-03
+2025-06-03 10:47:00 [INFO]: ✅ Fetched 11 reports for team 2 (start: 0) on 2025-06-03
+2025-06-03 10:47:00 [INFO]: 📋 Tìm thấy 21 người chưa nộp báo cáo
+2025-06-03 10:49:24 [INFO]: 📴 Bot đang tắt...
+2025-06-03 10:49:25 [INFO]: ✅ Server Express chạy trên port 3000
+2025-06-03 10:49:30 [INFO]: ✅ Đăng nhập bot thành công
+2025-06-03 10:49:30 [INFO]: ⏰ Thời gian hiện tại khi khởi động: Tue Jun 03 2025 10:49:30 GMT+0700 (Indochina Time)
+2025-06-03 10:49:30 [INFO]: 📅 Đã lên lịch log trạng thái mỗi 1 giờ
+2025-06-03 10:49:30 [INFO]: 📅 Đã lên lịch nhắc nhở 1 vào 0 59 8 * * 1-5
+2025-06-03 10:49:30 [INFO]: 📅 Đã lên lịch nhắc nhở 2 vào 0 55 11 * * 1-5
+2025-06-03 10:49:30 [INFO]: 📅 Đã lên lịch nhắc nhở 3 vào 0 45 16 * * 1-5
+2025-06-03 10:49:30 [INFO]: 📅 Đã lên lịch báo cáo non-submitters vào 17:00 thứ 2–6
+2025-06-03 10:49:30 [INFO]: ✅ Đã đăng ký lệnh slash
+2025-06-03 10:50:00 [INFO]: ⏰ Đang chạy báo cáo non-submitters vào Tue Jun 03 2025 10:50:00 GMT+0700 (Indochina Time)
+2025-06-03 10:50:00 [INFO]: ✅ Fetched 10 reports for team 1 (start: 0) on 2025-06-03
+2025-06-03 10:50:00 [INFO]: ✅ Fetched 11 reports for team 2 (start: 0) on 2025-06-03
+2025-06-03 10:50:00 [INFO]: 📋 Tìm thấy 21 người chưa nộp báo cáo
+2025-06-03 11:00:01 [INFO]: ✅ Đã gửi log trạng thái định kỳ
+2025-06-03 11:03:13 [INFO]: 📴 Bot đang tắt...
+2025-06-03 16:58:01 [INFO]: ✅ Server Express chạy trên port 3000
+2025-06-03 16:58:06 [INFO]: ✅ Đăng nhập bot thành công
+2025-06-03 16:58:06 [INFO]: ⏰ Thời gian hiện tại khi khởi động: Tue Jun 03 2025 16:58:06 GMT+0700 (Indochina Time)
+2025-06-03 16:58:06 [ERROR]: ❌ Lỗi client Discord: Missing Access
+2025-06-03 16:58:13 [INFO]: 📴 Bot đang tắt...
+2025-06-03 16:58:24 [INFO]: ✅ Server Express chạy trên port 3000
+2025-06-03 16:58:25 [INFO]: ✅ Đăng nhập bot thành công
+2025-06-03 16:58:25 [INFO]: ⏰ Thời gian hiện tại khi khởi động: Tue Jun 03 2025 16:58:25 GMT+0700 (Indochina Time)
+2025-06-03 16:58:25 [ERROR]: ❌ Lỗi client Discord: Missing Access
+2025-06-03 16:58:34 [INFO]: 📴 Bot đang tắt...
+2025-06-03 16:59:22 [INFO]: ✅ Server Express chạy trên port 3000
+2025-06-03 16:59:23 [INFO]: ✅ Đăng nhập bot thành công
+2025-06-03 16:59:23 [INFO]: ⏰ Thời gian hiện tại khi khởi động: Tue Jun 03 2025 16:59:23 GMT+0700 (Indochina Time)
+2025-06-03 16:59:23 [INFO]: 📅 Đã lên lịch log trạng thái mỗi 1 giờ
+2025-06-03 16:59:23 [INFO]: 📅 Đã lên lịch nhắc nhở 1 vào 0 59 8 * * 1-5
+2025-06-03 16:59:23 [INFO]: 📅 Đã lên lịch nhắc nhở 2 vào 0 55 11 * * 1-5
+2025-06-03 16:59:23 [INFO]: 📅 Đã lên lịch nhắc nhở 3 vào 0 45 16 * * 1-5
+2025-06-03 16:59:23 [INFO]: 📅 Đã lên lịch báo cáo non-submitters vào 17:00 thứ 2–6
+2025-06-03 16:59:24 [INFO]: ✅ Đã đăng ký lệnh slash
+2025-06-03 16:59:52 [INFO]: 📴 Bot đang tắt...
+2025-06-03 16:59:54 [INFO]: ✅ Server Express chạy trên port 3000
+2025-06-03 16:59:56 [INFO]: ✅ Đăng nhập bot thành công
+2025-06-03 16:59:56 [INFO]: ⏰ Thời gian hiện tại khi khởi động: Tue Jun 03 2025 16:59:56 GMT+0700 (Indochina Time)
+2025-06-03 16:59:56 [INFO]: 📅 Đã lên lịch log trạng thái mỗi 1 giờ
+2025-06-03 16:59:56 [INFO]: 📅 Đã lên lịch nhắc nhở 1 vào 0 59 8 * * 1-5
+2025-06-03 16:59:56 [INFO]: 📅 Đã lên lịch nhắc nhở 2 vào 0 55 11 * * 1-5
+2025-06-03 16:59:56 [INFO]: 📅 Đã lên lịch nhắc nhở 3 vào 0 45 16 * * 1-5
+2025-06-03 16:59:56 [INFO]: 📅 Đã lên lịch báo cáo non-submitters vào 17:00 thứ 2–6
+2025-06-03 16:59:56 [INFO]: ✅ Đã đăng ký lệnh slash
+2025-06-03 17:00:00 [INFO]: ⏰ Đang chạy báo cáo non-submitters vào Tue Jun 03 2025 17:00:00 GMT+0700 (Indochina Time)
+2025-06-03 17:00:00 [INFO]: ✅ Fetched 10 reports for team 1 (start: 0) on 2025-06-03
+2025-06-03 17:00:00 [INFO]: ✅ Fetched 11 reports for team 2 (start: 0) on 2025-06-03
+2025-06-03 17:00:00 [INFO]: 📋 Tìm thấy 5 người chưa nộp báo cáo
+2025-06-03 17:00:00 [INFO]: ✅ Đã gửi log trạng thái định kỳ
+2025-06-03 17:00:02 [INFO]: ✅ Đã tag 5 người chưa nộp báo cáo trong kênh chính
+2025-06-03 17:00:42 [INFO]: 📴 Bot đang tắt...

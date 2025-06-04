@@ -248,7 +248,7 @@ client.once('ready', async () => {
     });
 
     // Scheduled task for non-submitters report at 5:00 PM
-    schedule.scheduleJob('non-submitter-report', '0 50 10 * * 1-5', async () => {
+    schedule.scheduleJob('non-submitter-report', '0 0 17 * * 1-5', async () => {
         logger.info(`⏰ Đang chạy báo cáo non-submitters vào ${new Date().toString()}`);
         try {
             const today = new Date().toISOString().split('T')[0];
@@ -300,7 +300,7 @@ client.once('ready', async () => {
                 nonSubmitterDetails.push({ discordId, fullname: user.fullname, team_id: user.team_id });
             }
 
-            if (taggedUsers.size > 99) {
+            if (taggedUsers.size > 0) {
                 const mentions = nonSubmitterDetails.map(user => `<@${user.discordId}>`).join(', ');
                 const details = nonSubmitterDetails
                     .map(user => `${user.fullname} (Team ${user.team_id})`)
