@@ -53,15 +53,15 @@ const getRandomLunchEmbed = () => {
     const lunchMessages = [
         {
             description: '🍜 **Tèn ten!** Đến giờ **nghỉ trưa** rồi nè! 😋 Đi ăn phở hay bún gì ngon đi, 12:00 trưa rùi! 🥳',
-            thumbnail: 'https://vietour.vn/images/hinh-bat-pho-vietour01.jpg' // Hình bát phở
+            thumbnail: 'https://afamilycdn.com/2017/15-buc-hinh-dong-ve-nhung-mon-my-khien-ban-phai-nuot-nuoc-mieng-1486436555185.gif' // Hình bát phở
         },
         {
             description: '🍔 **12:00 trưa** rồi! Giờ **nghỉ trưa** nè, ai ăn burger, ai ăn cơm tấm đây? 😎 Let’s go! 🎈',
-            thumbnail: 'https://media.istockphoto.com/id/1412706588/vi/anh/hamburger-tr%C3%AAn-th%E1%BB%9Bt-th%E1%BB%A7-c%C3%B4ng-n%E1%BB%81n-t%C3%A2m-tr%E1%BA%A1ng-t%E1%BB%91i.jpg?s=612x612&w=0&k=20&c=xSxOsMObANKGI_AkLj0x29I1UqM84QYMbNeCJ4Sg8nY=' // Hình burger
+            thumbnail: 'https://afamilycdn.com/2018/7/26/do-an-1-1532590946005650606367.gif' // Hình burger
         },
         {
             description: '🍣 **Nghỉ trưa** thôi nào! Sushi, bánh xèo hay trà sữa, chọn gì đây? 😋 **12:00** nha mọi người! 🚴‍♂️',
-            thumbnail: 'https://media.istockphoto.com/id/1555947107/vi/anh/set-sushi-v%C3%A0-maki.jpg?s=612x612&w=0&k=20&c=r_heT_qgK5SYpLrFd5M-U9v81w5kcj5zok05AZl5_rw=' // Hình sushi
+            thumbnail: 'https://media.viez.vn/prod/2021/8/10/20_nh226n_v7853t_ph7909_273225ng_y234u_nh7845t_trong_phim_ho7841t_h236nh_ghibli_p2_10_8080c52b1e.gif' // Hình sushi
         }
     ];
     return lunchMessages[Math.floor(Math.random() * lunchMessages.length)];
@@ -71,64 +71,86 @@ const getRandomLunchEmbed = () => {
 const reminders = [
     {
         time: '0 59 8 * * 1-5',
+        mention: '@everyone',
         embed: () => new EmbedBuilder()
             .setTitle('🌞 **ASAKAI TIME!**')
             .setDescription('🚀 **Sáng rực rỡ rồi!** Mọi người sẵn sàng họp ASAKAI chưa? 💪 **8:59 sáng** nè, vào thôi nào! 🎉')
-            .setColor('#FFD700') // Màu vàng sáng
+            .setColor('#FFD700')
             .addFields(
                 { name: '⏰ Thời gian', value: '8:59 AM', inline: true },
                 { name: '📍 Kênh họp', value: 'Kiểm tra Zoom/Discord nha!', inline: true }
             )
-            .setThumbnail('https://st.quantrimang.com/photos/image/2020/12/25/Hinh-chuc-buoi-sang-4.jpg') // Hình mặt trời
-            .setFooter({ text: 'Bot nhắc nhở siêu xịn by NQT', iconURL: client.user.displayAvatarURL() })
+            .setThumbnail('https://st.quantrimang.com/photos/image/2020/12/25/Hinh-chuc-buoi-sang-4.jpg')
+            .setFooter({ text: 'Bot được tài trợ bới HƯNG MTQ', iconURL: client.user.displayAvatarURL() })
+            .setTimestamp()
+    },
+    {
+        time: '0 30 8 * * 1-5',
+        mention: '<@707205937026433094> <@1377107855177678889>',
+        embed: () => new EmbedBuilder()
+            .setTitle('📋 **KIỂM TRA DAILY REPORT!**')
+            .setDescription(`📢 **${`<@707205937026433094>`} ${`<@1377107855177678889>`}**, đến giờ kiểm tra ** daily report** rồi nè! 🕗 **08:30 sáng**, nhanh tay check để thu tiền nhé! 💻`)
+            .setColor('#1E90FF')
+            .addFields(
+                { name: '⏰ Thời gian', value: '8:30 AM', inline: true },
+                { name: '✅ Hành động', value: '[Work Report](https://work-report.thk-hd-hn.vn/)', inline: true }
+            )
+            .setThumbnail('https://media.discordapp.net/attachments/1378912400673214494/1378912619033002086/20250602-084437.gif?ex=68424873&is=6840f6f3&hm=cdf4afb8cb868742aef093aab12bf6ee6f80f8a201c1936cbc87bd27b180c880&=&width=244&height=256')
+            .setFooter({ text: 'Bot được tài trợ bới HƯNG MTQ', iconURL: client.user.displayAvatarURL() })
             .setTimestamp()
     },
     {
         time: '0 55 11 * * 1-5',
+        mention: '@everyone',
         embed: () => {
             const { description, thumbnail } = getRandomLunchEmbed();
             return new EmbedBuilder()
                 .setTitle('🍴 **GIỜ NGHỈ TRƯA!**')
                 .setDescription(description)
-                .setColor('#00FF7F') // Màu xanh lá tươi
+                .setColor('#00FF7F')
                 .addFields(
-                    { name: '⏰ Thời gian', value: '11:55 PM', inline: true },
+                    { name: '⏰ Thời gian', value: '11:55 AM', inline: true },
                     { name: '🍽 Gợi ý', value: 'Ăn gì ngon thì share nha!', inline: true }
                 )
                 .setThumbnail(thumbnail)
-                .setFooter({ text: 'Bot nhắc nhở siêu xịn by NQT', iconURL: client.user.displayAvatarURL() })
+                .setFooter({ text: 'Bot được tài trợ bới HƯNG MTQ', iconURL: client.user.displayAvatarURL() })
                 .setTimestamp();
         }
     },
     {
         time: '0 45 16 * * 1-5',
+        mention: '@everyone',
         embed: () => new EmbedBuilder()
             .setTitle('📝 **HẾU HẾU! DAILY REPORT TIME!**')
             .setDescription('⏰ **16:45 chiều** rồi nè! Đừng quên **báo cáo ngày** nha mọi người! 📊 Nhanh tay vào link báo cáo nào! 💪')
-            .setColor('#FF4500') // Màu cam nổi bật
+            .setColor('#FF4500')
             .addFields(
                 { name: '⏰ Thời gian', value: '4:45 PM', inline: true },
                 { name: '🔗 Link báo cáo', value: '[Work Report](https://work-report.thk-hd-hn.vn/)', inline: true }
             )
-            .setThumbnail('https://png.pngtree.com/png-clipart/20190614/original/pngtree-report-writing-line-filled-icon-png-image_3789245.jpg') // Hình checklist
-            .setFooter({ text: 'Bot nhắc nhở siêu xịn by NQT', iconURL: client.user.displayAvatarURL() })
+            .setThumbnail('https://png.pngtree.com/png-clipart/20190614/original/pngtree-report-writing-line-filled-icon-png-image_3789245.jpg')
+            .setFooter({ text: 'Bot được tài trợ bới HƯNG MTQ', iconURL: client.user.displayAvatarURL() })
             .setTimestamp()
     }
 ];
 
 // Cập nhật retrySendMessage để hỗ trợ cả chuỗi và embeds
-const retrySendMessage = async (channel, content, retries = 3, delay = 5000) => {
+const retrySendMessage = async (channel, content, mention = '', retries = 3, delay = 5000) => {
     for (let i = 0; i < retries; i++) {
         try {
             if (typeof content === 'string') {
                 await channel.send({ content });
             } else {
-                await channel.send({ content: '@everyone', embeds: [content] });
+                await channel.send({ content: mention, embeds: [content] });
             }
             return true;
         } catch (err) {
-            logger.error(`❌ Lỗi khi gửi tin nhắn (lần ${i + 1}/${retries}): ${err.message}, Channel ID: ${channel?.id || 'Không xác định'}`);
-            if (i < retries - 1) {
+            logger.error(`❌ Lỗi khi gửi tin nhắn (lần ${i + 1}/${retries}): ${err.message}, Channel ID: ${channel?.id || 'Không xác định'}, Mention: "${mention}"`);
+            if (err.code === 429) {
+                const retryAfter = err.retryAfter || delay;
+                logger.warn(`⚠ Gặp rate limit, thử lại sau ${retryAfter / 1000} giây...`);
+                await new Promise(resolve => setTimeout(resolve, retryAfter));
+            } else if (i < retries - 1) {
                 logger.info(`⏳ Thử lại sau ${delay / 1000} giây...`);
                 await new Promise(resolve => setTimeout(resolve, delay));
             }
@@ -174,16 +196,16 @@ client.once('ready', async () => {
     // Lên lịch các nhắc nhở
     reminders.forEach((reminder, index) => {
         schedule.scheduleJob(`reminder-${index}`, reminder.time, async () => {
-            logger.info(`⏰ Đang chạy lịch trình nhắc nhở ${index + 1} vào ${new Date().toString()}`);
+            logger.info(`⏰ Đang chạy lịch trình nhắc nhở ${index + 1} vào ${new Date().toString()}"`);
             logger.info(`🔍 Kênh chính: ${channel ? channel.id : 'Không tìm thấy'}`);
-            const success = await retrySendMessage(channel, reminder.embed());
+            const success = await retrySendMessage(channel, reminder.embed(), reminder.mention);
             if (success) {
                 logger.info(`✅ Đã gửi nhắc nhở: ${reminder.embed().data.description}`);
             } else {
                 logger.error(`❌ Không thể gửi nhắc nhở sau nhiều lần thử`);
             }
         });
-        logger.info(`📅 Đã lên lịch nhắc nhở ${index + 1} vào ${reminder.time}`);
+        logger.info(`📅 Đã lên lịch nhắc nhở ${index + 1} vào ${reminder.time}"`);
     });
 
     // Đăng ký lệnh slash
