@@ -86,10 +86,10 @@ const reminders = [
     },
     {
         time: '0 30 8 * * 1-5',
-        mention: '<@707205937026433094> <@1377107855177678889>',
+        mention: '<@685340976457449493> <@1376808156369387553>',
         embed: () => new EmbedBuilder()
             .setTitle('📋 **KIỂM TRA DAILY REPORT!**')
-            .setDescription(`📢 **${`<@707205937026433094>`} ${`<@1377107855177678889>`}**, đến giờ kiểm tra ** daily report** rồi nè! 🕗 **08:30 sáng**, nhanh tay check để thu tiền nhé! 💻`)
+            .setDescription(`📢 **${`<@685340976457449493>`} ${`<@1376808156369387553>`}**, đến giờ kiểm tra ** daily report** rồi nè! 🕗 **08:30 sáng**, nhanh tay check để thu tiền nhé! 💻`)
             .setColor('#1E90FF')
             .addFields(
                 { name: '⏰ Thời gian', value: '8:30 AM', inline: true },
